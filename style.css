@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgb(252, 252, 252)
+
+}
+.header {
+    height: 50px;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    padding-bottom: 0px;
+    border-top: 9px solid pink;
+}
+.logo {
+    height: 40px;
+    color: rgb(136, 136, 11);
+    /* border: 2px solid blue; */
+}
+.logosection {
+    display: flex;
+}
+.logosection p {
+    position: relative;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 15px;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    /* border: 2px solid brown; */
+    
+}
+
+ul li a {
+    /* border: 2px solid grey; */
+    margin-left: 132px;
+    text-decoration: none;
+    color: rgb(83, 55, 60);
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  rgb(83, 55, 60);
+    transform-origin: bottom right;
+    transition: transform 0.28s ease-out;
+
+}
+ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }   
+.main h2 {
+    margin: 0%;
+}
+.main h3 {
+    margin: 0%;
+}
+.main {
+    display: flex;
+    background-color: rgba(247,168,171,255);
+}
+.left h1 {
+    text-align: center;
+    color: rgb(245, 245, 8);
+    font-size: 40px;
+    font-family: 'Alegreya', serif;
+
+}
+.left button{
+    text-align: center;
+}
+
+.left p {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+.btn {
+    margin: 10px 2px 2px 2px;
+    padding: 5px 13px 5px 13px;
+    border-radius:13px 13px 13px 13px;
+    border-style: none;
+    background-color: rgb(250, 250, 54);
+    color: rgb(31, 18, 20); 
+    font-size: 15px;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+#navbtn {
+    margin-top: -4px;
+}
+.btn:hover {
+    background: #ebfc05;
+    transform: translateY(-5px);
+    color: #a72424;
+    box-shadow: 0px 10px 25px rgba(139, 238, 10, 0.445);
+}
